@@ -55,15 +55,9 @@ public class MovieRepository {
 
     public Movie getMovieByName(String movieName) {
         if(movieMap.containsKey(movieName)){
-            System.out.println("You found movie and returned");
             return movieMap.get(movieName);
         }
         else{
-            System.out.println("Movie not found returned null");
-            System.out.println("Required : "+movieName);
-            System.out.println("But you have :");
-            for(String s : movieMap.keySet())
-                System.out.println(s);
             return null;
         }
     }
