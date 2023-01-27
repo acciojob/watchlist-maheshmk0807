@@ -22,11 +22,11 @@ public class MovieService {
         return movieRepository.addMovieDirectorPair(movie,director);
     }
 
-    public String getMovieByName(String movieName) {
+    public Movie getMovieByName(String movieName) {
         return movieRepository.getMovieByName(movieName);
     }
 
-    public String getDirectorByName(String directorName) {
+    public Director getDirectorByName(String directorName) {
         return movieRepository.getDirectorByName(directorName);
     }
 
