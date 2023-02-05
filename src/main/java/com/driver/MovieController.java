@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 public class MovieController {
 
-
     @Autowired
     MovieService movieService;
 
